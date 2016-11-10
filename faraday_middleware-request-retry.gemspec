@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ['John Wang']
   s.email       = 'johncwang@gmail.com'
   s.homepage    = 'https://github.com/grokify/'
-  s.licenses    = ['MIT']
+  s.license     = 'Apache 2.0'
   s.files       = [
     'CHANGELOG.md',
     'LICENSE.md',
