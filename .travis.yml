@@ -14,8 +14,8 @@ rvm:
   - 1.8.7
   - ruby
   - ruby-head
-  - jruby
-  - jruby-19mode
+  - jruby-9.1.5.0
+  - jruby-9.0.5.0
   - jruby-head
   - rbx-2
   - rbx-head
@@ -27,7 +27,6 @@ matrix:
     - rvm: 1.8.7
     - rvm: ruby
     - rvm: ruby-head
-    - rvm: jruby
-    - rvm: jruby-19mode
     - rvm: jruby-head
+    - rvm: rbx-2
     - rvm: rbx-head
