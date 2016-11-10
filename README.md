@@ -15,7 +15,7 @@ Faraday middleware to manage request retries.
 
 ## Description
 
-This gem is a piece of Faraday middleware that adds retry handling for 429 and 503 errors.
+This gem is Faraday middleware that adds retry handling for 429 and 503 errors.
 
 ## Installation
 
