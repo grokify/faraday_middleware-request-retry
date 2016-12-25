@@ -7,7 +7,7 @@ require 'faraday_middleware'
 require 'faraday_middleware-request-retry'
 
 class RetryTest < Test::Unit::TestCase
-  def testSetup
+  def test_setup
 
     @conn = Faraday.new 'http://example.com/api' do |builder|
       builder.use FaradayMiddleware::Request::Retry
