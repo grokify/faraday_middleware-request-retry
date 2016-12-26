@@ -45,7 +45,7 @@ require 'faraday_middleware-request-retry'
 require 'logger'
 
 conn = Faraday.new(url: "http://example.com") do |builder|
-  builder.use FaradayMiddleware::Refresh::Retry, logger: Logger.new(STDOUT)
+  builder.use FaradayMiddleware::Refresh::Retry, logger: Logger.new(STDOUT), retry_after: 15
   builder.adapter Faraday.default_adapter
 end
 
