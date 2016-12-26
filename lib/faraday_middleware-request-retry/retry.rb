@@ -8,7 +8,7 @@ module FaradayMiddleware
       ERROR_CODES = [429, 503]
 
       def initialize(app, options = {})
-        super(app)
+        super app
         @logger = options[:logger]
         @retry_after = options[:retry_after] || DEFAULT_RETRY_AFTER
         @error_codes = options[:error_codes] || ERROR_CODES
@@ -28,7 +28,7 @@ module FaradayMiddleware
             @logger.warn "#{time_left}..." if time_left > 0 && time_left % 5 == 0 && @logger
           end
 
-          @logger.warn '' if @logger
+          @logger.warn 'Retrying...' if @logger
           @app.call original_env
         else
           response
