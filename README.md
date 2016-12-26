@@ -79,7 +79,7 @@ Please report these on [Github](https://github.com/grokify/faraday_middleware-re
 
 ## Credits
 
-This code is extracted from the Zendesk Ruby SDK's `ZendeskAPI::Middleware::Request::Retry` class.
+This code is based on code from the Zendesk Ruby SDK's `ZendeskAPI::Middleware::Request::Retry` class.
 
 ## Copyright and license
 
