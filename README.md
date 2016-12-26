@@ -52,6 +52,13 @@ end
 conn.get "/foo" # sends token
 ```
 
+Options include:
+
+| Option | Value |
+|--------|-------|
+| `:retry_after` | Default retry seconds |
+| `:error_codes` | Array of error codes, e.g. `[429, 503, 504]` |
+
 ## Change Log
 
 See [CHANGELOG.md](CHANGELOG.md)
