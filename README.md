@@ -5,6 +5,7 @@ FaradayMiddleware::Request::Retry
 [![Build Status][build-status-svg]][build-status-link]
 [![Coverage Status][coverage-status-svg]][coverage-status-link]
 [![Dependency Status][dependency-status-svg]][dependency-status-link]
+[![Codacy Badge][codacy-svg]][codacy-link]
 [![Code Climate][codeclimate-status-svg]][codeclimate-status-link]
 [![Scrutinizer Code Quality][scrutinizer-status-svg]][scrutinizer-status-link]
 [![Downloads][downloads-svg]][downloads-link]
@@ -101,6 +102,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
  [coverage-status-link]: https://coveralls.io/r/grokify/faraday_middleware-request-retry?branch=master
  [dependency-status-svg]: https://gemnasium.com/grokify/faraday_middleware-request-retry.svg
  [dependency-status-link]: https://gemnasium.com/grokify/faraday_middleware-request-retry
+ [codacy-svg]: https://api.codacy.com/project/badge/Grade/d2c515165a60402eb10410cf4bd51f50
+ [codacy-link]: https://www.codacy.com/app/grokify/faraday_middleware-request-retry
  [codeclimate-status-svg]: https://codeclimate.com/github/grokify/faraday_middleware-request-retry/badges/gpa.svg
  [codeclimate-status-link]: https://codeclimate.com/github/grokify/faraday_middleware-request-retry
  [scrutinizer-status-svg]: https://scrutinizer-ci.com/g/grokify/faraday_middleware-request-retry/badges/quality-score.png?b=master
