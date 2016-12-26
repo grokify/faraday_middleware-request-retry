@@ -16,7 +16,7 @@ module FaradayMiddleware
 
       def call(env)
         original_env = env.dup
-        response = @app.call(env)
+        response = @app.call env
 
         if @error_codes.include? response.env[:status]
           seconds_left = (response.env[:response_headers][:retry_after] || @retry_after).to_i
@@ -29,7 +29,6 @@ module FaradayMiddleware
           end
 
           @logger.warn '' if @logger
-
           @app.call original_env
         else
           response

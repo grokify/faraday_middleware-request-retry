@@ -57,7 +57,7 @@ Options include:
 
 | Option | Value | Required |
 |--------|-------|----------|
-| `:logger` | Logger object | true |
+| `:logger` | `Logger` object if logging is desired | false |
 | `:retry_after` | Default retry seconds | false, default 10 |
 | `:error_codes` | Array of error codes, e.g. `[429, 503, 504]` | false, default `[429, 503]` |
 
