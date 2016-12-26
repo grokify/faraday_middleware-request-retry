@@ -11,13 +11,14 @@ module FaradayMiddleware
         super(app)
         @logger = options[:logger]
         @retry_after = options[:retry_after] || DEFAULT_RETRY_AFTER
+        @error_codes = options[:error_codes] || ERROR_CODES
       end
 
       def call(env)
         original_env = env.dup
         response = @app.call(env)
 
-        if ERROR_CODES.include?(response.env[:status])
+        if @error_codes.include? response.env[:status]
           seconds_left = (response.env[:response_headers][:retry_after] || @retry_after).to_i
           @logger.warn "You have been rate limited. Retrying in #{seconds_left} seconds..." if @logger
 
@@ -27,9 +28,9 @@ module FaradayMiddleware
             @logger.warn "#{time_left}..." if time_left > 0 && time_left % 5 == 0 && @logger
           end
 
-          @logger.warn "" if @logger
+          @logger.warn '' if @logger
 
-          @app.call(original_env)
+          @app.call original_env
         else
           response
         end
