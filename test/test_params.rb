@@ -18,27 +18,27 @@ class RetryParamsTest < Test::Unit::TestCase
     @conn = Faraday.new 'http://example.com/api' do |builder|
       builder.use FaradayMiddleware::Request::Retry
     end
-    assert_equal @error_codes_default, @conn.builder.app.error_codes
+    assert_equal @error_codes_default, @conn.builder.app.retry_util.error_codes
   end
 
   def test_error_codes_custom
     @conn = Faraday.new 'http://example.com/api' do |builder|
       builder.use FaradayMiddleware::Request::Retry, error_codes: @error_codes_custom
     end
-    assert_equal @error_codes_custom, @conn.builder.app.error_codes
+    assert_equal @error_codes_custom, @conn.builder.app.retry_util.error_codes
   end
 
   def test_retry_after_default
     @conn = Faraday.new 'http://example.com/api' do |builder|
       builder.use FaradayMiddleware::Request::Retry
     end
-    assert_equal @retry_after_default, @conn.builder.app.retry_after
+    assert_equal @retry_after_default, @conn.builder.app.retry_util.retry_after
   end
 
   def test_retry_after_custom
     @conn = Faraday.new 'http://example.com/api' do |builder|
       builder.use FaradayMiddleware::Request::Retry, retry_after: @retry_after_custom
     end
-    assert_equal @retry_after_custom, @conn.builder.app.retry_after
+    assert_equal @retry_after_custom, @conn.builder.app.retry_util.retry_after
   end
 end

@@ -1,5 +1,7 @@
 CHANGELOG
 ---------
+- **2016-12-28**: 0.2.0
+  - Refactor to support external use via `RetryUtil`
 - **2016-12-28**: 0.1.0
   - Add custom retry time support
   - Add custom status code support

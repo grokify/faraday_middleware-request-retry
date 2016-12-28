@@ -61,6 +61,20 @@ Options include:
 | `:retry_after` | Default retry seconds | optional | `10` seconds |
 | `:error_codes` | Array of error codes, e.g. `[429, 503, 504]` | optional | `[429, 503]` |
 
+### External Use
+
+The core retry functionality can be used separately from Faraday when necessary. For example, when requests cannot be replayed, e.g. when `Faraday::UploadIO` is used.
+
+```ruby
+res = faraday_client.get '/my_url'
+
+retry_util = FaradayMiddleware::Request::RetryUtil.new
+
+# The following will return `true` for retry, `false` for don't,
+# while sleeping when necessary
+want_retry = retry_util.retry_status res.status, res.headers['Retry-After']
+```
+
 ## Change Log
 
 See [CHANGELOG.md](CHANGELOG.md)
