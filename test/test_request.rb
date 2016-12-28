@@ -21,7 +21,16 @@ class RetryParamsTest < Test::Unit::TestCase
       end
     end
 
-    @conn.get '/200'
-    @conn.get '/429'
+    @conn.get do |req|
+      req.url '/200'
+      req.options.timeout = 1
+      req.options.open_timeout = 1
+    end
+
+    @conn.get do |req|
+      req.url '/429'
+      req.options.timeout = 1
+      req.options.open_timeout = 1
+    end
   end
 end
