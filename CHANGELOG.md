@@ -1,6 +1,6 @@
 CHANGELOG
 ---------
-- **2016-12-26**: 0.0.3
+- **2016-12-28**: 0.1.0
   - Add custom retry time support
   - Add custom status code support
   - Add Codacy analysis

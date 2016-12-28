@@ -55,11 +55,11 @@ conn.get "/foo" # sends token
 
 Options include:
 
-| Option | Value | Required |
+| Option | Values | Notes |
 |--------|-------|----------|
-| `:logger` | `Logger` object if logging is desired | false |
-| `:retry_after` | Default retry seconds | false, default 10 |
-| `:error_codes` | Array of error codes, e.g. `[429, 503, 504]` | false, default `[429, 503]` |
+| `:logger` | `Logger` object if logging is desired | optional |
+| `:retry_after` | Default retry seconds | optional, default `10` |
+| `:error_codes` | Array of error codes, e.g. `[429, 503, 504]` | optional, default `[429, 503]` |
 
 ## Change Log
 

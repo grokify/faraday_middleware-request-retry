@@ -7,11 +7,14 @@ module FaradayMiddleware
       DEFAULT_RETRY_AFTER = 10
       ERROR_CODES = [429, 503]
 
+      attr_reader :error_codes
+      attr_reader :retry_after
+
       def initialize(app, options = {})
         super app
         @logger = options[:logger]
-        @retry_after = options[:retry_after] || DEFAULT_RETRY_AFTER
         @error_codes = options[:error_codes] || ERROR_CODES
+        @retry_after = options[:retry_after] || DEFAULT_RETRY_AFTER
       end
 
       def call(env)
