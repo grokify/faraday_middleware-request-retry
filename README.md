@@ -79,7 +79,7 @@ Please report these on [Github](https://github.com/grokify/faraday_middleware-re
 
 ## Credits
 
-This library is originally based on code extracted from the Zendesk Ruby SDK's `ZendeskAPI::Middleware::Request::Retry` class, in [v1.14.0](https://github.com/zendesk/zendesk_api_client_rb/releases/tag/v1.14.0) in commit [2c2b52e](https://github.com/zendesk/zendesk_api_client_rb/blob/2c2b52ea390b3641d4af383759217fda75bc74ec/LICENSE) available under the Apache 2.0 license. 
+This library is originally based on code extracted from the Zendesk Ruby SDK's `ZendeskAPI::Middleware::Request::Retry` class, in [v1.14.0](https://github.com/zendesk/zendesk_api_client_rb/releases/tag/v1.14.0) (commit [2c2b52e](https://github.com/zendesk/zendesk_api_client_rb/blob/2c2b52ea390b3641d4af383759217fda75bc74ec/LICENSE)) available under the Apache 2.0 license. 
 
 ## Copyright and license
 
