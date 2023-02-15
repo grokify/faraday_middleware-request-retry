@@ -4,11 +4,8 @@ FaradayMiddleware::Request::Retry
 [![Gem Version][gem-version-svg]][gem-version-link]
 [![Build Status][build-status-svg]][build-status-link]
 [![Coverage Status][coverage-status-svg]][coverage-status-link]
-[![Dependency Status][dependency-status-svg]][dependency-status-link]
-[![Codacy Badge][codacy-svg]][codacy-link]
 [![Code Climate][codeclimate-status-svg]][codeclimate-status-link]
 [![Scrutinizer Code Quality][scrutinizer-status-svg]][scrutinizer-status-link]
-[![Downloads][downloads-svg]][downloads-link]
 [![Docs][docs-rubydoc-svg]][docs-rubydoc-link]
 [![License][license-svg]][license-link]
 
@@ -97,7 +94,7 @@ This library is originally based on code extracted from the Zendesk Ruby SDK's `
 
 ## Copyright and license
 
-Copyright &copy; 2015 Zendesk, 2016 John Wang
+Copyright &copy; 2015 Zendesk, 2016-2023 John Wang
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 
