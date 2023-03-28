@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'faraday_middleware-request-retry'
-  s.version     = '0.2.1'
-  s.date        = '2023-02-14'
+  s.version     = '0.2.2'
+  s.date        = '2023-03-27'
   s.summary     = 'Faraday request middleware with retry'
   s.description = 'This Faraday middleware gem adds request retries for 429 and 503 errors'
   s.authors     = ['John Wang']
