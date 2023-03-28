@@ -1,5 +1,9 @@
 CHANGELOG
 ---------
+- **2023-03-27**: 0.2.2
+  - `README.md` doc fix
+- **2023-02-14**: 0.2.1
+  - Add option for longer retry delay
 - **2016-12-28**: 0.2.0
   - Refactor to support external use via `RetryUtil`
 - **2016-12-28**: 0.1.0
