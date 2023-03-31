@@ -1,13 +1,13 @@
 FaradayMiddleware::Request::Retry
 =================================
 
-[![Gem Version][gem-version-svg]][gem-version-link]
-[![Build Status][build-status-svg]][build-status-link]
-[![Coverage Status][coverage-status-svg]][coverage-status-link]
-[![Code Climate][codeclimate-status-svg]][codeclimate-status-link]
-[![Scrutinizer Code Quality][scrutinizer-status-svg]][scrutinizer-status-link]
-[![Docs][docs-rubydoc-svg]][docs-rubydoc-link]
-[![License][license-svg]][license-link]
+[![Gem Version][gem-version-svg]][gem-version-url]
+[![Build Status][build-status-svg]][build-status-url]
+[![Coverage Status][coverage-status-svg]][coverage-status-url]
+[![Code Climate][codeclimate-status-svg]][codeclimate-status-url]
+[![Scrutinizer Code Quality][scrutinizer-status-svg]][scrutinizer-status-url]
+[![Docs][docs-rubydoc-svg]][docs-rubydoc-url]
+[![License][license-svg]][license-url]
 
 Faraday middleware to manage request retries.
 
@@ -105,22 +105,22 @@ http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
  [gem-version-svg]: https://badge.fury.io/rb/faraday_middleware-request-retry.svg
- [gem-version-link]: http://badge.fury.io/rb/faraday_middleware-request-retry
+ [gem-version-url]: http://badge.fury.io/rb/faraday_middleware-request-retry
  [downloads-svg]: http://ruby-gem-downloads-badge.herokuapp.com/faraday_middleware-request-retry
- [downloads-link]: https://rubygems.org/gems/faraday_middleware-request-retry
- [build-status-svg]: https://api.travis-ci.org/grokify/faraday_middleware-request-retry.svg?branch=master
- [build-status-link]: https://travis-ci.org/grokify/faraday_middleware-request-retry
+ [downloads-url]: https://rubygems.org/gems/faraday_middleware-request-retry
+ [build-status-svg]: https://github.com/grokify/faraday_middleware-request-retry/workflows/ruby%20build/badge.svg
+ [build-status-url]: https://github.com/grokify/faraday_middleware-request-retry/actions
  [coverage-status-svg]: https://coveralls.io/repos/grokify/faraday_middleware-request-retry/badge.svg?branch=master
- [coverage-status-link]: https://coveralls.io/r/grokify/faraday_middleware-request-retry?branch=master
+ [coverage-status-url]: https://coveralls.io/r/grokify/faraday_middleware-request-retry?branch=master
  [dependency-status-svg]: https://gemnasium.com/grokify/faraday_middleware-request-retry.svg
- [dependency-status-link]: https://gemnasium.com/grokify/faraday_middleware-request-retry
+ [dependency-status-url]: https://gemnasium.com/grokify/faraday_middleware-request-retry
  [codacy-svg]: https://api.codacy.com/project/badge/Grade/d2c515165a60402eb10410cf4bd51f50
- [codacy-link]: https://www.codacy.com/app/grokify/faraday_middleware-request-retry
+ [codacy-url]: https://www.codacy.com/app/grokify/faraday_middleware-request-retry
  [codeclimate-status-svg]: https://codeclimate.com/github/grokify/faraday_middleware-request-retry/badges/gpa.svg
- [codeclimate-status-link]: https://codeclimate.com/github/grokify/faraday_middleware-request-retry
+ [codeclimate-status-url]: https://codeclimate.com/github/grokify/faraday_middleware-request-retry
  [scrutinizer-status-svg]: https://scrutinizer-ci.com/g/grokify/faraday_middleware-request-retry/badges/quality-score.png?b=master
- [scrutinizer-status-link]: https://scrutinizer-ci.com/g/grokify/faraday_middleware-request-retry/?branch=master
+ [scrutinizer-status-url]: https://scrutinizer-ci.com/g/grokify/faraday_middleware-request-retry/?branch=master
  [docs-rubydoc-svg]: https://img.shields.io/badge/docs-rubydoc-blue.svg
- [docs-rubydoc-link]: http://www.rubydoc.info/gems/faraday_middleware-request-retry/
+ [docs-rubydoc-url]: http://www.rubydoc.info/gems/faraday_middleware-request-retry/
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-link]: https://github.com/grokify/faraday_middleware-request-retry/blob/master/LICENSE.txt
+ [license-url]: https://github.com/grokify/faraday_middleware-request-retry/blob/master/LICENSE.txt
