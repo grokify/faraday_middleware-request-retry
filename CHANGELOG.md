@@ -1,5 +1,7 @@
 CHANGELOG
 ---------
+- **2023-03-31**: 0.2.3
+  - `README.md` update CI shield links
 - **2023-03-27**: 0.2.2
   - `README.md` doc fix
 - **2023-02-14**: 0.2.1
